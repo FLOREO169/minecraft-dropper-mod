@@ -21,7 +21,7 @@ public class DropperModClient implements ClientModInitializer {
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (openMenuKey.wasPressed()) {
-                if (client.player != null) {
+                if (client.player != null && client.screen == null) {
                     client.setScreen(new DropperControlGui());
                 }
             }

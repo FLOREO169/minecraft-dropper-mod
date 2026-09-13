@@ -105,7 +105,6 @@ public class DropperControlGui extends Screen {
 
     private void setOutput() {
         if (this.client != null && this.client.player != null) {
-            // Nachricht an den Spieler
             this.client.player.sendMessage(
                 Text.literal("§6Dropper " + this.selectedDropper + " -> Item " + this.selectedOutput),
                 false
