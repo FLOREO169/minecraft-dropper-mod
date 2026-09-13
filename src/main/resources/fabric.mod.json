@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "droppermod",
+  "version": "1.0.0",
+  "name": "Dropper Output Controller",
+  "description": "Control dropper outputs with a GUI menu using Ü key",
+  "authors": [
+    "FLOREO169"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.floreo.droppermod.DropperModClient"
+    ],
+    "client": [
+      "com.floreo.droppermod.DropperModClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.3"
+  }
+}
